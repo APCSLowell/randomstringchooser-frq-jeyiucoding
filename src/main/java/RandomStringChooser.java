@@ -10,13 +10,14 @@ public class RandomStringChooser
     }
     v = x.length();
   }
-  public getNext(){
+  public String getNext(){
     if(v == 0){
       return "NONE";
     }
     int i = (int)(Math.random()*v);
     String se = s[i];
-    v-=1;
+    s[i] = s[v - 1];
+    v--;
     return se;
   }
   /* to be implemented in part (a) */
