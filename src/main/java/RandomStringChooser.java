@@ -3,12 +3,12 @@ public class RandomStringChooser
 {
   private String[] s;
   private int v;
-  public RandomStringChooser(String[]x){
-    s = new String[x.length()];
-    for(int i = 0; i < s.length(); i++){
+  public RandomStringChooser(String[] x){
+    s = new String[x.length];
+    for(int i = 0; i < s.length; i++){
       s[i] = x[i];
     }
-    v = x.length();
+    v = x.length;
   }
   public String getNext(){
     if(v == 0){
